@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(180, 224, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    transform-origin: top center;
+    top: -100px; /* Mueve todo lo que hay en el contenedor cierta cantidad de pixeles hacia arriba c: */
+}
+
+
+@media (max-width: 768px) {
+    .contenedor {
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        transform: scale(0.6);
+    }
+}
+
+.caritaOso {
+    width: 220px;
+    height: 180px;
+    background-color: rgba(180, 102, 24, 0.732);
+    border-radius: 50%;
+    position: absolute;
+    top: 60px;
+    left: 40px;
+}
+
+.oreja {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(180, 102, 24, 0.732);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.oreja.izquierda {
+    top: 40px;
+    left: 25px;
+}
+
+.oreja.Derecha {
+    top: 43px;
+    left: 210px;
+}
+
+.RueditaAmarilla {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(248, 238, 128, 0.959);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.RueditaAmarilla.izquierda {
+    top: 50px;
+    left: 35px;
+}
+
+.RueditaAmarilla.derecha {
+    top: 52px;
+    left: 220px;
+}
+
+.hocico {
+    width: 100px;
+    height: 70px;
+    background-color: rgba(248, 238, 128, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+.nariz {
+    width: 40px;
+    height: 20px;
+    background-color: rgba(38, 37, 30, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top: 145px;
+    left: 130px;
+}
+
+.ojo {
+    width: 10px;
+    height: 20px;
+    background-color: rgba(38, 37, 30, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    animation: parpadear 1s infinite;
+}
+
+.ojo.izquierdo {
+    top: 125px;
+    left: 120px;
+}
+
+.ojo.derecho {
+    top: 125px;
+    left: 170px;
+}
+
+.cuerpo {
+    width: 220px;
+    height: 230px;
+    background-color: rgba(180, 102, 24, 0.732);
+    border-radius: 50%;
+    position: absolute;
+    top: 205px;
+    left: 40px;
+}
+
+.pancita{
+     width: 180px;
+    height: 220px;
+    background-color:rgba(248, 238, 128, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top: 190px;
+    left: 60px;
+}
+
+.corazon1{
+    width: 117px;
+    height: 117px;
+    background-color: rgba(255, 40, 40, 0.96);
+    border-radius: 50%;
+    position: absolute;
+    top: 205px;
+    left: 40px;
+    animation: latir 1s infinite; 
+}
+
+.corazon2{
+    width: 117px;
+    height: 117px;
+    background-color: rgba(255, 40, 40, 0.96);
+    border-radius: 50%;
+    position: absolute;
+    top: 205px;
+    right: 40px;
+    animation: latir 1s infinite; 
+}
+
+.corazon3 {
+    width: 117px;
+    height: 117px;
+    background-color: rgba(255, 40, 40, 0.96);
+    position: absolute;
+    top: 258px;
+    left: 92px;
+    transform: rotate(45deg);
+    transform-origin: center;
+    animation: latir 1s infinite;
+   
+}
+
+
+
+.manita{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(180, 102, 24, 0.732);
+    border-radius: 50%;
+}
+
+.manita.izquierdaa{
+    position: absolute;
+    top: 205px;
+    left: 1px;
+}
+
+.manita.derechaa{
+    position: absolute;
+    top: 205px;
+    right: 10px;
+}
+
+
+
+.piecito{
+    width: 80px;
+    height: 80px;
+    background-color: rgba(180, 102, 24, 0.732);
+    border-radius: 50%;
+}
+
+.piecito.izquierdo{
+    position: absolute;
+    top: 350px;
+    left: 20px;
+}
+
+.piecito.derecho{
+    position: absolute;
+    top: 350px;
+    right: 20px;
+}
+
+.piecitoAmarillo{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(248, 238, 128, 0.959);
+    border-radius: 50%;
+}
+
+.piecitoAmarillo.Izquierdo{
+    position: absolute;
+    top: 365px;
+    left: 35px;
+}
+
+.piecitoAmarillo.Derecho{
+    position: absolute;
+    top: 365px;
+    right: 35px;
+}
+
+.solecito{
+    width: 120px;
+    height: 120px;
+    background-color: rgba(251, 237, 81, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:-110px;
+    right:-200px;
+}
+
+.pastito{
+    width: 1699px;
+    height: 270px;
+    background-color: rgb(42, 218, 42); 
+    position: absolute;
+    bottom: -330px;
+    left: -700px;
+    z-index: -1; /* hace que el pastito se vaya atrás del osito, ñam*/
+}
+
+.nubecita{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left:-230px;
+}
+.nubecita2{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:-100px;
+    left:-180px;
+}
+.nubecita3{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:-50px;
+    left:-140px;
+}
+
+
+.nubecita4{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:30px;
+    left:-535px;
+}
+.nubecita5{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    left:-580px;
+}
+.nubecita6{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    left:-500px;
+}
+
+
+.nubecita7{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:30px;
+    right:-535px;
+}
+.nubecita8{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    right:-580px;
+}
+.nubecita9{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border-radius: 50%;
+    position: absolute;
+    top:70px;
+    right:-500px;
+}
+
+
+
+@keyframes latir {
+    0% {
+        transform: rotate(45deg) scale(1); 
+    }
+    50% {
+        transform: rotate(45deg) scale(1.2); 
+    }
+    100% {
+        transform: rotate(45deg) scale(1); 
+    }
+}
+
+@keyframes parpadear {
+    0%, 100% {
+        height: 20px;
+    }
+    50% {
+        height: 1px;
+    }
+}
+
+.texto{
+    font-size: 28px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1px;
+    color:white;
+    position: absolute;
+    top:210px;
+    left:80px;
+}
+
+
+.corazon-flotante {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  transform: rotate(45deg);
+  animation: flotar 4s linear forwards;
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.corazon-flotante::before,
+.corazon-flotante::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  border-radius: 50%;
+}
+
+.corazon-flotante::before {
+  top: -10px;
+  left: 0;
+}
+
+.corazon-flotante::after {
+  left: -10px;
+  top: 0;
+}
+
+@keyframes flotar {
+  0% {
+    transform: rotate(45deg) translateY(0);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(45deg) translateY(-300px);
+    opacity: 0;
+  }
+}
